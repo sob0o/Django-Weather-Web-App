@@ -81,7 +81,7 @@ def weather(request):
     result = None
     if 'city' in request.GET:
         city = request.GET['city']
-        api_key = 'ec58e85792c1583b8a4e9b7e6739cdc2'  # Your new API key
+        api_key = 'ec58e85792c1583b8a4e9b7e6739cdc2'  # Your new API key this valide for 7 days
         url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
 
         # Fetch the weather data
